@@ -1,4 +1,5 @@
 tensorflow==2.12.0
+python-box==6.0.2
 pandas
 notebook
 numpy
