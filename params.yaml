@@ -1,1 +1,9 @@
-key: value
+
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3] # AS PER VGG 16 model
+BATCH_SIZE: 16
+INCLUDE_TOP: False # dense layer nibo na 
+EPOCHS: 5
+CLASSES: 2
+WEIGHTS: imagenet
+LEARNING_RATE: 0.01

@@ -17,4 +17,5 @@ Flask-Cors
 pydrive
 gdown
 matplotlib
+tensorflow
 -e .
