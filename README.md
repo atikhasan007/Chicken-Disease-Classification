@@ -1,4 +1,100 @@
-# Chicken-Disease-Classification
+# 🐔 Chicken Disease Classification using Deep Learning (CNN + Flask)
+
+An end-to-end **Deep Learning Project** for classifying chicken diseases using image data from **Kaggle dataset**, built with **CNN (VGG16 Transfer Learning)** and deployed using **Flask API + Web Interface**.
+
+---
+
+## 🚀 Project Overview
+
+This project is an AI-based image classification system that detects chicken diseases from images.  
+It follows a complete **MLOps-style pipeline** including:
+
+- Data ingestion (from Kaggle dataset)
+- Data preprocessing & augmentation
+- Transfer learning (VGG16 CNN model)
+- Model training & evaluation
+- Flask-based deployment
+- Real-time image prediction UI
+
+---
+
+## 🎯 Business Objectives
+
+- Early detection of chicken diseases using AI
+- Reduce manual inspection cost in poultry farms
+- Improve livestock health monitoring
+- Provide fast and accurate image-based diagnosis
+- Build production-ready ML pipeline
+
+---
+
+## 📊 Data Sources
+
+- Dataset collected from **Kaggle**
+- Image categories:
+  - Healthy Chicken
+  - Diseased Chicken
+- Data format: Images (JPG/PNG)
+- Preprocessing: resizing (224x224), normalization, augmentation
+
+---
+
+## 📈 Exploratory Data Analysis (EDA)
+
+- Class distribution visualization
+- Image quality inspection
+- Dataset balancing check
+- Augmentation techniques:
+  - Rotation
+  - Zoom
+  - Flip
+  - Rescaling
+
+---
+
+## 🤖 Models Used
+
+### 🧠 CNN Architecture
+- Pretrained **VGG16 (Transfer Learning)**
+- Frozen convolutional base
+- Custom dense classifier head:
+  - Flatten layer
+  - Dense layer (output: 2 classes)
+
+### ⚙️ Why VGG16?
+- Strong feature extraction capability
+- Works well on small datasets
+- Faster convergence using pretrained weights
+
+---
+
+## 📏 Evaluation Metrics
+
+### 🧪 Final Results
+- Training Accuracy: **89.53%**
+- Validation Accuracy: **92.19%**
+- Final Training Loss: **0.6456**
+- Final Validation Loss: **0.8410**
+
+### 📊 Performance Summary
+- Best validation accuracy achieved: **92.19%**
+- Model shows stable convergence after epoch 3
+- Good generalization on validation data
+
+---
+
+
+
+### 🔹 Features
+- Upload image from UI
+- Base64 image decoding
+- Real-time prediction response
+- JSON output result
+
+---
+
+## 📁 Project Structure
+
 # WorkFlow
 1. Update config.yaml
 2. Update params.yaml
@@ -34,3 +130,13 @@ conda activate cnncls
 pip install -r requirements.txt
 
 ```
+
+
+---
+
+## ⚙️ How to Run This Project
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/chicken-disease-classifier.git
+cd chicken-disease-classifier
