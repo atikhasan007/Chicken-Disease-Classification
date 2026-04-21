@@ -131,4 +131,11 @@ pip install -r requirements.txt
 
 ```
 
+## web app result
+
+<img width="1049" height="790" alt="Screenshot 2026-04-21 121535" src="https://github.com/user-attachments/assets/6ba4d781-7a6a-42ad-bc80-29e92096b2a0" />
+
+<img width="1033" height="772" alt="Screenshot 2026-04-21 121645" src="https://github.com/user-attachments/assets/198ec421-f827-4e5f-9f58-db8d9ad5f342" />
+
+
 
