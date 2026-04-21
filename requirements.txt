@@ -18,4 +18,5 @@ pydrive
 gdown
 matplotlib
 tensorflow
+scipy
 -e .
