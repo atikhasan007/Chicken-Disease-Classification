@@ -1,6 +1,6 @@
 from src.cnnClassifier.constants import *
 from src.cnnClassifier.utils.common import read_yaml, create_directories
-from src.cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig , TrainingConfig
+from src.cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig , TrainingConfig , EvaluationConfig
 from pathlib import Path
 import os
 
@@ -80,3 +80,17 @@ class ConfigurationManager:
         )
 
         return training_config
+
+
+
+
+    
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data = r"C:\Users\Hp\Desktop\Chicken-Disease-Classification\artifacts\data_ingestion\unzipped\Chicken-fecal-images",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
