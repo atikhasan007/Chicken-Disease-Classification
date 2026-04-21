@@ -132,11 +132,3 @@ pip install -r requirements.txt
 ```
 
 
----
-
-## ⚙️ How to Run This Project
-
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/your-username/chicken-disease-classifier.git
-cd chicken-disease-classifier
